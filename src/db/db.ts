@@ -6,7 +6,7 @@ const pool = new Pool({
   host: Config.POSTGRES_HOST,
   database: Config.POSTGRES_DATABASE,
   password: Config.POSTGRES_PASSWORD,
-  port: Number(Config.PORT),
+  port: Number(Config.POSTGRES_PORT),
 });
 
 export default pool;
