@@ -8,6 +8,7 @@ const {
   POSTGRES_DATABASE,
   POSTGRES_PASSWORD,
   POSTGRES_PORT,
+  SALT_ROUNDS,
 } = process.env;
 
 export const Config = {
@@ -17,4 +18,5 @@ export const Config = {
   POSTGRES_DATABASE,
   POSTGRES_PASSWORD,
   POSTGRES_PORT,
+  SALT_ROUNDS,
 };

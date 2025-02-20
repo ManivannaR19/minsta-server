@@ -1,5 +1,5 @@
 import { Pool } from "pg";
-import { Config } from "src/config";
+import { Config } from "@config";
 
 const pool = new Pool({
   user: Config.POSTGRES_USER,

@@ -31,6 +31,7 @@
     "baseUrl": "./" /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
       "@db": ["src/db/db.ts"],
+      "@config": ["src/config/index.ts"],
       "@models": ["src/models/*"],
       "@services": ["src/services/*"],
       "@controllers": ["src/controllers/*"],
