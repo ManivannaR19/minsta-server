@@ -10,6 +10,7 @@ const getAllUsers = async () => {
   } catch (err) {
     const error = err as DatabaseError;
     console.log(`Error in getAllUsersModel: ${error.message}`);
+    throw new Error(error.message);
   }
 };
 
