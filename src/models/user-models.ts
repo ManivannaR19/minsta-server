@@ -1,7 +1,6 @@
 import db from "@db";
-import { User } from "@types";
+import { CreateUserPayload, User } from "@types";
 import { DatabaseError } from "pg";
-import { RegisterPayload } from "src/types/auth-types";
 
 const getAllUsers = async () => {
   try {
@@ -14,7 +13,7 @@ const getAllUsers = async () => {
   }
 };
 
-const createUser = async (payload: RegisterPayload) => {
+const createUser = async (payload: CreateUserPayload) => {
   try {
     const { username, email_address, password } = payload;
 

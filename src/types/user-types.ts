@@ -8,3 +8,10 @@ export interface User {
   created_at: Date;
   updated_at: Date;
 }
+
+/** PAYLOADS **/
+export interface CreateUserPayload {
+  username: string;
+  email_address: string;
+  password: string;
+}
